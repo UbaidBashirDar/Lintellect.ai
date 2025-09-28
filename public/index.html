@@ -1,0 +1,66 @@
+<!doctype html>
+<meta property="og:type" content="website" />
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" as="style">
+<link rel="stylesheet" href="/css/styles.css">
+
+
+<!-- Google Analytics placeholder -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'GA_MEASUREMENT_ID');
+</script>
+</head>
+<body>
+<main class="container">
+<header>
+<img src="/images/logo.png" alt="Lintellect.ai logo" class="logo" />
+<h1 class="title">Lintellect.ai</h1>
+<p class="tagline">AI-powered insights for developers</p>
+</header>
+
+
+<section class="controls">
+<label for="language">Language</label>
+<select id="language">
+<option value="javascript">JavaScript</option>
+<option value="typescript">TypeScript</option>
+<option value="python">Python</option>
+<option value="java">Java</option>
+<option value="c">C</option>
+<option value="cpp">C++</option>
+<option value="html">HTML</option>
+<option value="css">CSS</option>
+</select>
+
+
+<button id="lintBtn">Run Quick Scan</button>
+<button id="reviewBtn">Request AI Review</button>
+</section>
+
+
+<section class="editor">
+<textarea id="code" placeholder="Paste your code here..." spellcheck="false"></textarea>
+</section>
+
+
+<section class="results">
+<h2>Review Report</h2>
+<div id="report" class="card">No report yet.</div>
+<div id="suggestions" class="card hidden"></div>
+</section>
+
+
+<footer>
+<small>© 2025 Lintellect.ai — AI-powered insights for developers</small>
+</footer>
+</main>
+
+
+<script src="/js/ai.js"></script>
+<script src="/js/app.js"></script>
+</body>
+</html>
